@@ -1,0 +1,27 @@
+Quando for realizar correção de commits no geral 
+será necessario que quando esteja corrigindo os marges
+pela plataforma é importante os NameUser 
+
+Como verificar o nameUser cadastrado --> 
+($ git config --list)
+
+caso deseje alterar um UserName ou email --> 
+
+começamos reescrevendo estas configuraôes --> 
+($ git config --global --unset user.email)
+($ git config --global --unset user.name)
+
+Quando utilizado ($ git config --list)
+Perceberemos que não há mais o UserName e email
+>>>>
+logo não é possivel efetuar commit por conta de 
+não haver um autor do commit 
+
+Isto pois foi "Removido o Email e Username"
+
+Para add de volta "Retira apenas o unset"
+($ git config --global user.email)
+($ git config --global user.name)
+
+
+parado em 8:21
