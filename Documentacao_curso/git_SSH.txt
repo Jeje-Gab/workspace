@@ -3,6 +3,10 @@ enviar codigos da mesma para o GitHub sem a nescessidade de senhas
 
 Passos: 
 
+
+ssh-keygen -t ed25519 -C luizzanoni47@gmail.com
+
+
 1º Processo
 
 No GitHub em seu icone de perfil -> Settings -> 

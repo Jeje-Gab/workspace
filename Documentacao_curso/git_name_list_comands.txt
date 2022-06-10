@@ -23,5 +23,43 @@ Para add de volta "Retira apenas o unset"
 ($ git config --global user.email)
 ($ git config --global user.name)
 
+Para enviar um repositorio do local Host, maquina para o 
+servidor, neste caso para o GitHub é necessario possuir
+ja o local/arquivos criados na maquina/local host e após isto
+quando commitados e salvados prontos para envio, deve se 
+seguir os passos no GitHub criando um repositorio de mesmo nome
+para que quando finalizado obeter a URL dada ao final pelo GitHub
+e com esta URL vamos "Empurar" para o Repositorio remoto 
+adicionando a Origem da seguinte forma: 
 
-parado em 8:21
+($ git remote add origin (Link dado pelo GitHuna))
+($ git remote add origin https://github.com/Jeje-Gab)
+
+para saber se deu certo utiliza-se ($ git remote -v) -> Lista as listas de 
+repositorios cadastrados
+
+Quando trabalhamos em mais de uma pessoa num mesmo projeto podem ser feitas alteraçôes 
+por ambos, as quais podem ser distintas e ao salvar um codigo e enviar para o Servidor
+está diferença há conflito -> Ex Pessoa_1 no Arquivo X fez alteração na linha 3 e a pessoa_2
+que também trabalha no Arquivo X quando for fazer uma aletaçâo precisa estar em sincronia isto
+é com o codigo atualizado ambos devem ter em sintese o mesmo arquivo quando o arquivo X da 
+pessoa_1 for =! diferente do arquivo da pessoa_2 deve ser feito um pull que vai puxar para a 
+maquina local a ultima versão, com as ultimas alteraçôes de codigo no arquivo Ex: 
+($ git pull origin main) -> puxa o codigo do repositorio//servidor//GitHub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
