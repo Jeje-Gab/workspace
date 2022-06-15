@@ -1,0 +1,160 @@
+Desenvolvimento Multiplataformas
+
+-> Possivel desenvolver para Web, Mobile e outros
+
+App Models {
+    .NET Framework -> 
+        ASP.NET (Desenvolvimento Web);
+        Windows Forms 
+
+    .NET Core
+        ASP.NET Core *
+
+    Xamarin 
+        Xamarin iOS
+        Xamarin Android
+}
+
+Base Libraries {
+    .NET Standard Library
+}
+
+.NET {
+    ASP.NET
+    ADO.NET
+    WCF
+    WPF
+}
+
+.NET = .NET Core + .NET Framework + Xamarin + Mono
+
+Xamarin (Desenvolvimento Mobile) Baseado no .NET Framework {
+    Possivel compilar na linguagem nativa da plataforma 
+        Mantendo apenas um unico codigo de logica 
+        compartilhado entre eles -> Tanto com C# 
+        quanto com a linguagem de marcação XAML
+        
+        Neste caso a compilação é feita de forma diferente
+
+        XAML -> Linguagem de marcação
+}
+
+Um Bom codigo {
+    Topicos {
+        Ser Finfiavel
+
+        Ser Sustentável
+    
+        Ser Eficiente
+    }
+
+    Padronização {
+        -> Facilita a manutenção dos codigos
+
+        -> Utilizar documentação 
+
+        -> Clean Code
+    }
+} 
+
+Clean Code {
+    Boas Praticas
+
+    Legibilidade -> Codigo simples pratico de 
+    facil compreenção
+
+    Solucionar codigos a partir de suas raizes
+
+    Variaveis auto esplicativas {
+        Nomes Descritivos {
+
+        }
+    }
+
+    Metodos {
+        Metodos devem ser curtos e possuir somente um objetivo
+        ou responsabilidade {
+            EX: 
+            
+            public void AplicaDesconto() {
+
+            }
+        }
+
+        Devem possuir nomes descritivos {
+            EX: 
+
+            public void CalcularDescontoCompra(){
+        
+            }
+        }
+
+        Evitar muitos parametros dentro de um metodo
+    }
+
+    Funções {
+        Evitar trocar valores de variaveis com funções, os 
+        valores se necessario serem alterados devem ser feitos
+        com a propia atribuição a variavel ou por meio de um
+        metodo
+
+        Ex: 
+
+        public class Produto 
+        {
+            public decimal Quantidade { get; private set; }
+
+            public void CalcularQuantidade(){}
+        }
+
+        var produto = new Produto();
+
+        produto.Quantiade = 10;
+
+        OBS = A variavel já possi um valor e para ajustalo 
+        foi foito um metodo para não mutar o valor da 
+        variavel por padrão alem de setar "private" para
+        tornar a parte da configuração privada
+    }
+
+    Utilização erradas ou desnecessárias de Flags no codigo {
+        Sempre visar a melhor forma de utilizar uma flag
+        é uma boa medida para evitar erros desnecessarios
+        ou deixar o codigo mais limpo 
+        
+        Por exemplo ao passar um valor bool para uma função ou
+        metodo para obter retorno verdadeiro ou falso a utilizaçâo 
+        de um If/Else pode ser evitada através de uma separação 
+        usando outas formas como um Update por exemplo que retorna
+        o que há em evidencia
+    }
+}
+
+padrão de utilizaçâo em C# {
+    Para nomes de Classes e Métodos (PascalCase) {
+        EX: 
+        EnvioForm;
+        TaxaEntrega;
+        CalculaValor;
+    }
+
+    Para nomes de variaveis e parâmetros (CamelCase) {
+        Ex: 
+        nomeProduto;
+        numeroQuantidade;
+        dataEtrega;
+    }
+
+    No caso de interfaces recomenda-se uso do prefixo "I" {
+        Ex: 
+        iEntidade;
+        IRepositorioCliente;
+    }
+}
+
+Linguagens Suportadas pelo .NET {
+    C# {
+        Desenvolvimento de qualquer tipo de aplicação, para
+        execução em qualquer plataforma
+    }
+}

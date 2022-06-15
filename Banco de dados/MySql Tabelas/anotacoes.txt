@@ -1,0 +1,15 @@
+Modelo Relacional
+
+-> Tabelas são compostas por entidades, atributos e chaves  
+
+//Cada entidade tem seus atributos que são unicos e estas 
+//chaves ão permitir o relacionamneto entre estas tabelas
+
+As Entidades são de fato a Tabelo Ex:
+
+Tabela Pessoas } A entidade é "Pessoas"
+
+Caso na Tabela Pessoa haja nome a altura ? nome e altura são atributos
+
+
+

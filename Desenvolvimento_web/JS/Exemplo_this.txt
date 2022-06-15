@@ -1,0 +1,46 @@
+Sempr que uma função está denro de um objeto chamamos
+a mesma de metodo
+
+-> Neste exemplo a baixo Pessoa seria o Objeto
+-> E fullName, uma função que por estar dentro de um
+abjeto se tornou um metodo
+
+Ex: 
+Const pessoa = {
+	firtName: "André",
+	lastName: "Soares"
+
+	fullName : function(){
+		return.this.firtNAme + " " + this.lastName;
+	},
+	
+}
+
+Quando se usa um this dentro de um metodo o mesmo irá
+se referir ao objeto pai desse metodo
+
+-> Logo
+
+o this se refere ao objeto "pessoa" ->
+
+
+fullName : function(){
+	return.this.firtNAme + " " + this.lastName;
+},
+
+=============== O mesmo que =======================
+
+fullName : function(){
+	return.pessoa.firtNAme + " " + pessoa.lastName;
+},
+
+
+logo se solicitar ao final um "pessoa.fullName" retorna
+o nome inteiro 
+
+
+
+
+
+
+
