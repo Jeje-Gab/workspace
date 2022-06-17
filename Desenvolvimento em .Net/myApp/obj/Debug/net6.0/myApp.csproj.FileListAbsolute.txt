@@ -1,0 +1,15 @@
+C:\workspace\Desenvolvimento em .Net\myApp\bin\Debug\net6.0\myApp.exe
+C:\workspace\Desenvolvimento em .Net\myApp\bin\Debug\net6.0\myApp.deps.json
+C:\workspace\Desenvolvimento em .Net\myApp\bin\Debug\net6.0\myApp.runtimeconfig.json
+C:\workspace\Desenvolvimento em .Net\myApp\bin\Debug\net6.0\myApp.dll
+C:\workspace\Desenvolvimento em .Net\myApp\bin\Debug\net6.0\myApp.pdb
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.csproj.AssemblyReference.cache
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.AssemblyInfoInputs.cache
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.AssemblyInfo.cs
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.csproj.CoreCompileInputs.cache
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.dll
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\refint\myApp.dll
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.pdb
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\myApp.genruntimeconfig.cache
+C:\workspace\Desenvolvimento em .Net\myApp\obj\Debug\net6.0\ref\myApp.dll

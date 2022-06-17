@@ -1,0 +1,80 @@
+Primeiro comando no CMD 
+-> Sempre que usar um comando .NET deve se iniciar com ".NET":
+
+c:\Users\PastExemplo>dotnet --version {
+    Mostra qual a versão do .NET que estou usando
+}
+
+c:\Users\PastExemplo>dotnet --help {
+    Lista todos os possives comando que posso usar
+}
+
+c:\Users\PastExemplo>dotnet --info {
+    Trará informações do dotnet como versão e até sistma operacional
+}
+
+c:\Users\PastExemplo>dotnet --new {
+    Comando utilizado para criar um novo Projeto --> 
+        Porem deve especificar qual o tipo também (Qual modelo)
+        Objetivo (para Web ou outro) e linguagem
+}
+
+
+c:\Users\PastExemplo>dotnet --new --list --tag web{
+    Isto lista as tags e possibilidades de um novo Projeto
+    listando e filtrando para Web
+}
+
+
+c:\Users\PastExemplo>dotnet new console -o myApp {
+    Neste Estamos criando um novo projeto new
+    "console" é o tipo do projeto -> Linguagem "C#,F# & VB"
+    -o -> 
+    myApp -> Nome do Arquivo
+
+    {
+        Processando ações pós-criação...
+        Executando 'dotnet restore' em C:\workspace\Desenvolvimento em .Net\myApp\myApp.csproj...
+        Determinando os projetos a serem restaurados...
+        C:\workspace\Desenvolvimento em .Net\myApp\myApp.csproj restaurado (em 65 ms)
+        .
+        A restauração foi bem-sucedida.
+
+        (Executando 'dotnet restore' em ...) -> Está carregando as Referencias o necessario para o projeto rodar
+
+    }
+}
+
+c:\Users\PastExemplo\myApp>dotnet run{
+    para rodar o que há na pasta
+}
+
+c:\Users\PastExemplo\myApp>dotnet build{
+    Compila o codigo
+}
+
+c:\Users\PastExemplo\myApp>dotnet restore{
+    Em nossso projeto possuimos algumas dependencias para que o codigo possa rodar
+    supondo que alguma delas tenha sido apagada podemos utilizar o restore 
+    que o mesmo irá resgatar estas dependencias
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

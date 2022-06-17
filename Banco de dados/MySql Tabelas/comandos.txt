@@ -1,0 +1,17 @@
+Craiando uma tabela {
+    CREATE TABLE
+
+    Tipos: INT, VARCHAR, DATETIME
+
+    Exemplo tabela peassas: {
+        CREARE TABLE Pessoas (nome varchar(20), nascimento date);
+
+        -> atributo nome recebe um maximo de 20 caracteres 
+        -> atributo nascimento recebe uma data
+    }
+
+
+}
+
+
+
