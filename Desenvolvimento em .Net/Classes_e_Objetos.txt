@@ -1,0 +1,87 @@
+Classes: 
+{
+    São os tipos fundamentais de C# ->
+
+    Uma classe é uma estrutura de dados
+    que combina estado (campos) e açoes
+    (metodos)
+
+    Estrutura -> Gera um Objeto em 
+    tempo de execução
+}
+
+Objetos: 
+{
+    São instancias de uma classe, Isto é ->
+    As classes são como se a classe fosse a
+    declaraçãoO onde é definido o objeto e 
+    desenhado a estrutura
+}
+
+Ex de Declaração de Classe: 
+
+public class Ponto -> "Declara a Classe Ponto"
+{
+    public int x, y; -> "Declaração de duas variaveis/Propiedades"
+    public Ponto(int x, int y) -> "Recebe um valor x e y" => 
+    "valores os quais estão sendo postos nas variaveis internasd da classe"
+    {
+        this.x = x;
+        thos.y = y;
+    }
+}
+
+
+OBS => O "public Ponto" se trata de um metodo isto é um contrutor que 
+toda vez que se for criar um objeto daquela classe tem a opção
+de usar este contrutor para assim ja ter os valores
+
+
+Como se cria um novo objeto {
+    Com o operador "new" Ex: 
+    Ponto p1 = new Ponto(0,0);     
+}
+
+Membros: 
+{
+    Membros podem ser estaticos ou membros
+    da instancia o que defere seria que: 
+    
+    -> Membros de uma classe = estaticos
+
+    -> Membros de objeto = instancia
+
+    Ex de Mebros: Constantes, Variaveis, metodos,
+    propriedades, construtores
+}
+
+Para Membros de Classes possuem uma acessibilidade
+associada. que controla regiões do texto do programa 
+que podem acessar o membro -> 
+Podem ser: 
+    - public -> Qualquer parte do codigo pode acessa-lo (metodos, uma porpiedade ou outros)
+    - protected -> Protegido (Apenas as classes que herdam desta classe base tem acesso 
+a este metodo protected)
+    - internal -> Só é acessado de dentro do assembly que ele faz parte
+    - private -> Indica que é acessado por dentro da classe a qual está inserido (Não há acesso a ele 
+por outra classe, mesmo sendo uma classe filha)
+
+Metodos podem ser uma lista de parametros, que representam valores ou referencia de variaveis 
+Ex: "Um calculo de porcentagem" que passa para  o metodoe um tipo de retorno 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

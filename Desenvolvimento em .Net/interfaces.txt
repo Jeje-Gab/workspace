@@ -1,0 +1,38 @@
+Interfaces
+
+Uma interface não fornece implementações dos membros que 
+define -> Apenas suas "assinaturas"
+
+As interfaces podem empregar herança multipla 
+
+diferente de classes é possivel herdar ou implementar 
+multiplas interfaces.
+
+Ex:
+
+interface IControl 
+"Quem implementar o IControl"
+{
+    -> "Tem que ter o metodo Void chamado Paint"
+        void Paint();
+}
+interface IListBox
+{
+        void SetText(string text);
+}
+interface IComboBox: ITextBox, IListBox {}
+
+=============================================================
+interface IDataBound 
+{
+    void Bind (Binder b);
+}
+public class EditBox: IComboBox, IDataBound
+{
+    public void Paint() {}
+    public void SetText (string text) {}
+    public void Bind (Binder b) {}
+}
+
+
+

@@ -1,0 +1,39 @@
+Enums
+
+
+Enum é um tipo de valor distinto com um conjunto de constantes 
+nomeadas
+
+Isto é podento ter um ou mais valores.
+
+Ex: 
+
+enum Cor 
+{
+    Vermelho,
+    Verde,
+    Azul
+}
+
+Passando o meu enum cor -> 
+
+Em um case que de acordo com a condiçâo imprime a cor na tela
+
+static void EscreveCor(Cor cor)
+{
+    swith (cor)
+    {
+        case Cor.Vermelho:
+            Console.WriteLine("Vermelho");
+            break;
+        case Color.Verde:
+            Console.WriteLine("Verde");
+            break;
+    }
+}
+
+Cada tipo de wnum possui um tipo integral correspondente
+chamado tipo subjacente do tipo de enum 
+
+Quando não declara/Não informa o tipo ele tem como padrão
+o int 

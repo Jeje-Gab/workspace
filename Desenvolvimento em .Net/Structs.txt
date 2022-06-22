@@ -1,0 +1,22 @@
+Structs
+
+Structs são struturas de dados que poidem conter dados e 
+membros de ação, porem diferentes das classes as Structs são
+tipos de valor e não requerem alocação de heap
+
+Structs não aceitam herança pois tem como ideia uma estrutura
+mais simples
+
+As vantagens de usar Structs ao invez de classes para pequenas
+estruturas é a "economia de memoria" pois menos memoria será
+alocada 
+
+public class Ponto 
+{
+    public int x, y;
+    public Ponto (int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+}
