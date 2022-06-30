@@ -1,0 +1,86 @@
+﻿<!-- Importação do model-->
+@model ExpensiveControlApp.DTOs.ListExpensiveDTO
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row"> 
+    <div class="col-sm-12">
+        <h1>Despesas</h1>
+    </div>
+</div>
+
+<div class="row"> 
+    <div class="col-sm-12">
+        <a asp-action="Create" asp-controller="Expensive" class="btn btn-primary btn-lg d-block w-100" >Nova Despesa</a>
+    </div>
+</div>
+
+
+<form mmethod="post">
+    
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <!-- asp-validation-summary => Onde aparecerá nossas validações -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input asp-for="StartDate" type="date" placeholder="Digite a data inicial" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input asp-for="EndDate" type="date" placeholder="Digite a data inicial" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- Para ser possivel fazer o Post deste form precisa-se do Endpoint do Post um função Para buscar-->
+<!-- Endpoint => É o local de interação entre aplicativos -->
+<!-- Em "ExpensiveController.cs" precisamos de uma função para fazer este post para poder buscar-->
+<!-- Em "ExpensiveController.cs" ===>>> -->
+
+
+<div class="row">
+    <div class="col-md">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model.Items.Count > 0)
+                {
+                    foreach(var item in Model.Items)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Description</td>
+                            <td>@item.Date</td>
+                            <td>@item.Value</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4">Nenhum registro encontrado</td>
+                    </tr>
+                    // Tempo 43:18
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

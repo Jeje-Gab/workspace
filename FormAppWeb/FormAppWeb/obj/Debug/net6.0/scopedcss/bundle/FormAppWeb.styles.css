@@ -1,0 +1,136 @@
+/* _content/FormAppWeb/Views/Shared/_Layout.cshtml.rz.scp.css */
+*[b-uiboytneu3] {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex-container[b-uiboytneu3] {
+    max-width: 90vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-items[b-uiboytneu3] {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrada-informacoes[b-uiboytneu3] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fundo-verde-form[b-uiboytneu3] {
+    display: inline-block;
+    background-color: #00995d;
+    padding: 30px;
+}
+
+    .fundo-verde-form h1[b-uiboytneu3] {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .fundo-verde-form h2[b-uiboytneu3] {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+.form-unimed-verificacao-exames[b-uiboytneu3] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .form-unimed-verificacao-exames input[b-uiboytneu3] {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30px;
+        border-radius: 15px;
+        border: 0;
+        padding-left: 15px;
+    }
+
+        .form-unimed-verificacao-exames input:active[b-uiboytneu3],
+        .form-unimed-verificacao-exames input:focus-visible[b-uiboytneu3],
+        .form-unimed-verificacao-exames input:focus[b-uiboytneu3] {
+            outline: 0;
+            box-shadow: none;
+        }
+
+.label[b-uiboytneu3] {
+    width: 100%;
+    color: white;
+}
+
+    .label label[b-uiboytneu3] {
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    .label input[type="date"][b-uiboytneu3]::-webkit-calendar-picker-indicator {
+        margin-right: 10px;
+    }
+
+ul[b-uiboytneu3] {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li[b-uiboytneu3] {
+    padding: 0 10px;
+    list-style: none;
+}
+
+a[b-uiboytneu3] {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    a:hover[b-uiboytneu3] {
+        color: #00995d;
+    }
+
+.input-error[b-uiboytneu3] {
+    color: red;
+    border: red 1px solid !important;
+}
+
+.altura-corpo[b-uiboytneu3] {
+    height: 100vh;
+}
+
+    .altura-corpo > div[b-uiboytneu3] {
+        height: 100%;
+        margin-top: 200px;
+    }
+
+.button-send-formulario > button[b-uiboytneu3] {
+    background-color: #b1d34b;
+    border-color: #b1d34b;
+    color: white;
+    display: inline-block;
+    padding: 5px 60px;
+    font-size: 25px;
+    border-radius: 50px;
+    border: 3px solid #b1d34b;
+    cursor: pointer;
+}
+
+    .button-send-formulario > button:hover[b-uiboytneu3] {
+        background-color: #b1d34b;
+        border-color: #fff;
+        color: #fff;
+        transition: all 0.4s;
+    }

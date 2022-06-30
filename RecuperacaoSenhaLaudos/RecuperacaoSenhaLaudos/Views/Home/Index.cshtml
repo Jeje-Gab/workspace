@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="titulo">
+    <h1>Recuperação de Senha Portal de Laudos</h1>
+    <h2>Informe seus dados para obter o login de acesso ao Sistema Unimed!</h2>
+
+</div>*@
+
+<div class="altura-corpo">
+    <div class="flex-container">
+        <div class="entrada-informacoes">
+            <div class="fundo-verde-form">
+                <div class="titulo">
+                    <h1>Recuperação de Senha Portal de Laudos</h1>
+                    <h2>Informe seus dados para obter o login de acesso ao Sistema Unimed!</h2>
+
+                </div>
+
+                <form id="form" class="form-unimed-verificacao-exames" method="post">
+                    <div class="label">
+                        <label for="nCpf">Insira seu CPF:</label>
+                        <input asp-for="CPF" type="text" id="nCpf" value="" maxlength="11" onkeydown="pointCPF()" />
+                        @*<span id="resposta"></span>*@
+                    </div>
+                    <div class="label">
+                        <label for="dataNasc">Informe sua data de nascimento:</label>
+                        <input asp-for="DataNascimento" id="dataNasc" type="date">
+                    </div>
+                    <div class="label">
+                        <label for="nomeCompleto">Insira seu nome completo:</label>
+                        <input asp-for="NomeCompleto" id="nomeCompleto" type="text">
+                    </div>
+                    <div class="label">
+                        <label for="nomeMaeCompleto">Insira nome de sua mãe completo:</label>
+                        <input asp-for="NomeMaeCompleto" type="text" id="nomeMaeCompleto">
+                    </div>
+                    <div class="button-send-formulario">
+                        <button id="btnSubmitForm" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

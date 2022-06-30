@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FormAppWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FormAppWeb.styles.css" asp-append-version="true" />
+</head>
+    <body>
+        <header>
+            <div class="flex-container">
+                <div class="header-items">
+                    <div class="logo-unimed">
+                        <img src="img/logo.png" alt="logo-unimed">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="altura-corpo">
+            <div class="flex-container">
+                <div class="entrada-informacoes">
+                    <div class="fundo-verde-form">
+                        <h1>Recuperação de Senha Portal de Laudos</h1>
+                        <h2>Informe seus dados para obter o login de acesso ao Sistema Unimed!</h2>
+                        <form id="form" class="form-unimed-verificacao-exames">
+                            <div class="label">
+                                <label for="nCpf">Insira seu CPF:</label>
+                                <input type="text" id="nCpf" value="" maxlength="11" onkeydown="pointCPF()"/>
+                                <span id="resposta"></span>
+                            </div>
+                            <div class="label">
+                                <label for="dataNasc">Informe sua data de nascimento:</label>
+                                <input id="dataNasc" type="date">
+                            </div>
+                            <div class="label">
+                                <label for="nomeCompleto">Insira seu nome completo:</label>
+                                <input id="nomeCompleto" type="text">
+                            </div>
+                            <div class="label">
+                                <label for="nomeMaeCompleto">Insira nome de sua mãe completo:</label>
+                                <input type="text" id="nomeMaeCompleto">
+                            </div>
+                            <div class="button-send-formulario">
+                                <button id="btnSubmitForm" type="button">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            
+        </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
